@@ -1,0 +1,156 @@
+.scr{
+  overflow: hidden;
+}
+.ring1 img,
+.ring2 img {
+  z-index: 200 !important;
+}
+.bgred{
+  mix-blend-mode:hue;
+  /* mix-blend-mode:difference; */
+}
+.background{
+  background-image: url(/src/assets/image/img1.png);
+  background-position: 37% 0px ;
+  background-size: cover;
+}
+.question{
+  text-align: -webkit-center;
+}
+
+.texthide{
+  opacity: 0;
+}
+.quest{
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+.background2{
+  background-image: url(/src/assets/image/img2.png);
+  background-position: 37% 0px ;
+  background-size: cover;
+}
+button{
+  cursor: pointer;
+}
+.img1{
+  justify-self: anchor-center;
+}
+.img2{
+  top: 5px;
+  justify-self: anchor-center;
+}
+.page2img{
+  top: 10px;
+}
+
+
+.ring1, .ring2 {
+  transition: transform 2s;
+}
+.truering{
+  position: relative;
+  top: -130px;
+  flood-opacity: 20%;
+}
+
+.ring-animation-up {
+  animation: ring-animation-up 1s;
+  
+}
+
+.ring-animation-down {
+  animation: ring-animation-down 1s;
+  
+
+}
+.ring-animation-down-true {
+  animation: ring-animation-down-true 1s;
+}
+
+
+@keyframes ring-animation-up {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+
+@keyframes ring-animation-down {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes ring-animation-down-true {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(-120px);
+  }
+}
+
+.congratulation-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.txtst{
+  display: none;
+
+}
+
+.wrong-answer-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.congratulation-text.congratulation-text {
+  animation: congratulation-text-animation 2s;
+  display: block;
+}
+
+.wrong-answer-text.wrong-answer-text {
+  animation: wrong-answer-text-animation 2s;
+  display: block;
+}
+
+@keyframes congratulation-text-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wrong-answer-text-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
