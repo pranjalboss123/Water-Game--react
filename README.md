@@ -1,12 +1,9 @@
-# React + Vite
+# Water Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Mini Game developed by Rishikesh Gupta (me) just for practice.  
+It uses React + Vite to create an interactive gaming experience.
 
-Currently, two official plugins are available:
+## Demo Video
+[![Watch the video](https://raw.githubusercontent.com/pranjalboss123/Water-Game--react/main/path/to/water%20game%20final.mp4)](https://raw.githubusercontent.com/pranjalboss123/Water-Game--react/main/path/to/water%20game%20final.mp4)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Feel free to explore the game and provide feedback!
