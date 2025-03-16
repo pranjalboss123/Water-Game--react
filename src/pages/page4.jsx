@@ -8,12 +8,12 @@ const App = () => {
     const ringRef2 = useRef(null);
     const truebtn= useRef(null);
     const falsebtn= useRef(null);
-    const mkt = false
     const congratulationTextRef = useRef(null);
     const wrongAnswerTextRef = useRef(null);
     const question = useRef(null);
     const [isDisabledF, setIsDisabledF] = useState(false);
     const [isDisabledT, setIsDisabledT] = useState(false);
+    let mkt = false
     const handleAnswer = async (isTrue) => {
         
         setAnswer(isTrue);
@@ -71,8 +71,9 @@ const App = () => {
             truebtn.current.classList.add('bgred');
           } 
           else {
-            if(!isDisabledT)
+            if(!isDisabledT){
               mkt =true
+            }
             
             setIsDisabledF(true);
             truebtn.current.classList.add('bgred');
@@ -111,6 +112,8 @@ const App = () => {
             setIsDisabledF(false);
             if(mkt)
               setIsDisabledT(false)
+            truebtn.current.classList.remove('bgred');
+
           }
     };
     return (
