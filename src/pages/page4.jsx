@@ -8,6 +8,7 @@ const App = () => {
     const ringRef2 = useRef(null);
     const truebtn= useRef(null);
     const falsebtn= useRef(null);
+    const mkt = false
     const congratulationTextRef = useRef(null);
     const wrongAnswerTextRef = useRef(null);
     const question = useRef(null);
@@ -70,7 +71,9 @@ const App = () => {
             truebtn.current.classList.add('bgred');
           } 
           else {
-            setIsDisabledT(true);
+            if(!isDisabledT)
+              mkt =true
+            
             setIsDisabledF(true);
             truebtn.current.classList.add('bgred');
             ringRef1.current.classList.add('ring-animation-up');
@@ -106,6 +109,8 @@ const App = () => {
             question.current.classList.remove('texthide');
             wrongAnswerTextRef.current.classList.remove('wrong-answer-text');
             setIsDisabledF(false);
+            if(mkt)
+              setIsDisabledT(false)
           }
     };
     return (
